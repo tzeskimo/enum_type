@@ -46,7 +46,7 @@ fields, and any additional options:
 ```` ruby
 class MyModel < ActiveRecord::Base
   extend EnumType
-  enum_type :status, %w( active pending admin superadmin banned )
+  enum_type :status, values: %w( active pending admin superadmin banned )
 end
 ````
 
